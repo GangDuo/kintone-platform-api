@@ -2,8 +2,11 @@
   "name": "kintone-platform-api",
   "version": "0.1.0",
   "description": "Kintone API wrapper that abstracts PC/Mobile API differences",
-  "main": "src/index.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
+    "build": "tsc",
+    "prepare": "tsc",
     "test": "vitest"
   },
   "peerDependencies": {
@@ -15,5 +18,5 @@
     "typescript": "^5.7.3",
     "vitest": "^4.0.3"
   },
-  "files": ["src"]
+  "files": ["dist"]
 }
