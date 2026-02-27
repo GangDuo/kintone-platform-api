@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "forceConsistentCasingInFileNames": true,
+    "allowSyntheticDefaultImports": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "esModuleInterop": true,
+    "noUnusedLocals": true,
+    "noImplicitAny": true,
+    "target": "es5",
+    "module": "es2015",
+    "strict": true,
+    "moduleResolution": "node",
+    "lib": [
+      "dom",
+      "es2020"
+    ],
+    "types": ["node"]
+  },
+  "files": [
+    "./node_modules/@kintone/dts-gen/kintone.d.ts"
+  ],
+  "include": [
+    "src/**/*",
+    "tests/**/*"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

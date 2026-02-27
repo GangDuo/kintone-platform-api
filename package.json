@@ -1,0 +1,19 @@
+{
+  "name": "kintone-platform-api",
+  "version": "0.1.0",
+  "description": "Kintone API wrapper that abstracts PC/Mobile API differences",
+  "main": "src/index.ts",
+  "scripts": {
+    "test": "vitest"
+  },
+  "peerDependencies": {
+    "@kintone/rest-api-client": "^6.0.0"
+  },
+  "devDependencies": {
+    "@kintone/dts-gen": "^9.0.0",
+    "@kintone/rest-api-client": "^6.0.0",
+    "typescript": "^5.7.3",
+    "vitest": "^4.0.3"
+  },
+  "files": ["src"]
+}

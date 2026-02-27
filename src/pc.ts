@@ -1,0 +1,25 @@
+import type { KintonePlatformApi } from './types';
+
+export const pcApi: KintonePlatformApi = {
+  hideOptionsButton: () => kintone.app.showOptionsButton('HIDDEN'),
+  showOptionsButton: () => kintone.app.showOptionsButton('VISIBLE'),
+  hideFilterButton: () => kintone.app.showFilterButton('HIDDEN'),
+  showFilterButton: () => kintone.app.showFilterButton('VISIBLE'),
+  hideAddRecordButton: () => kintone.app.showAddRecordButton('HIDDEN'),
+  showAddRecordButton: () => kintone.app.showAddRecordButton('VISIBLE'),
+  hideEditRecordButton: () => kintone.app.record.showEditRecordButton('HIDDEN'),
+  showEditRecordButton: () => kintone.app.record.showEditRecordButton('VISIBLE'),
+  getLoginUser: () => kintone.getLoginUser(),
+  hideDescription: () => kintone.app.showDescription('CLOSED'),
+  showDescription: () => kintone.app.showDescription('OPEN'),
+  hideReportButton: () => kintone.app.showReportButton('HIDDEN'),
+  showReportButton: () => kintone.app.showReportButton('VISIBLE'),
+  hideAppSettingsButton: () => kintone.app.showAppSettingsButton('HIDDEN'),
+  showAppSettingsButton: () => kintone.app.showAppSettingsButton('VISIBLE'),
+  hideViewAndReportSelector: () => kintone.app.showViewAndReportSelector('HIDDEN'),
+  showViewAndReportSelector: () => kintone.app.showViewAndReportSelector('VISIBLE'),
+  getCurrentAppId: () => kintone.app.getId(),
+  showLoading: () => kintone.showLoading('VISIBLE'),
+  hideLoading: () => kintone.showLoading('HIDDEN'),
+  setFieldShown: (fieldCode, isShow) => kintone.app.record.setFieldShown(fieldCode, isShow),
+};
